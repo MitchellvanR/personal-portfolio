@@ -19,10 +19,8 @@ export class Navigation {
   sections = [
     {text: 'Home', target: "targetSplash"}, 
     {text: 'About me', target: "targetAbout"}, 
-    {text: 'Services', target: "targetServices"}, 
-    {text: 'Skills', target: "targetSkills"}, 
     {text: 'Experience', target: "targetExperience"}, 
-    {text: 'In development', target: ""}, 
+    {text: 'Skills', target: "targetSkills"}, 
     {text: 'Contact', target: ""}]
 
   constructor(private scroller: ViewportScroller) {}

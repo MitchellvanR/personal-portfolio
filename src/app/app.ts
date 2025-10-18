@@ -2,7 +2,6 @@ import { ChangeDetectorRef, Component, HostListener } from '@angular/core';
 import { Splash } from './splash/splash'
 import { About } from "./about/about";
 import { Skills } from "./skills/skills";
-import { Services } from "./services/services";
 import { Navigation } from "./navigation/navigation";
 import { Experience } from "./experience/experience";
 
@@ -12,7 +11,6 @@ import { Experience } from "./experience/experience";
     Splash,
     About,
     Skills,
-    Services,
     Navigation,
     Experience
 ],

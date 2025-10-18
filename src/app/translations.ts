@@ -12,10 +12,15 @@ export const TRANSLATIONS = {
         experience: {
             title: 'Ervaring',
             timestamps: ['November 2020', 'April 2021', 'Maart 2023', 'September 2024', 'Februari 2024', 'April 2025'],
-            project_titles: ['Beslisboom editor', 'Social media monitor', 'Backoffice chat plugin', 'Alliander computer vision', 'Meewerkstage Alliander', 'Afstudeerstage OpenValue - Long Form Content Converter'],
+            project_titles: ['Beslisboom bewerkingssoftware', 'Social media monitor', 'Backoffice chat plugin', 'Alliander computer vision', 'Stage Alliander', 'Stage OpenValue - Long Form Content Converter'],
             projects: [
                 {
-                    paragraphs: ['Hey', 'yo']
+                    paragraphs: [
+                        'Mijn eerste invloedrijke project werd in opdracht uitgevoerd door het juridisch adviesbureau ARAG tijdens de COVID-19-pandemie. Ik kreeg de taak om een websiteplug-in te ontwikkelen waarmee gebruikers via een dynamische vragenlijst snel juridisch advies konden krijgen over reisrechten.', 
+                        'Ik ontwierp de architectuur van de plug-in en gebruikte Firebase, Java en Angular om een bewerkbare boomstructuur te bouwen die de ruggengraat van de vragenlijst vormde.',
+                        'Dit was mijn eerste samenwerkingsproject, waarin ik de basisprincipes van teamwork, stakeholdermanagement en langetermijnplanning leerde. Deze ervaringen vormen de fundamenten van de ontwikkelaar die ik vandaag ben.',
+                        'De plug-in werd met succes geïmplementeerd op de website van ARAG en bleef gedurende de pandemie in gebruik. De onderliggende structuur ondersteunt vandaag de dag nog steeds ARAG\'s RechtCheck Consumentenaankoop.'
+                    ]
                 },
                 {
                     paragraphs: ['Hey', 'yo']
@@ -35,7 +40,7 @@ export const TRANSLATIONS = {
             ]
         },
         navigation: {
-            items: ['Start', 'Over mij', 'Diensten', 'Vaardigheden', 'Ervaring', 'In ontwikkeling', 'Contact']
+            items: ['Start', 'Over mij', 'Ervaring', 'Vaardigheden', 'Contact']
         },
         services: {
             title: 'Diensten',
@@ -84,15 +89,9 @@ export const TRANSLATIONS = {
         experience: {
             title: 'Experience',
             timestamps: ['November 2020', 'April 2021', 'March 2023', 'September 2024', 'February 2024', 'April 2025'],
-            project_titles: ['Decision Tree Editor', 'Social Media Monitor', 'Backoffice Chat Plugin', 'Alliander Computer Vision', 'Internship at Alliander', 'Graduation Internship at OpenValue - Long Form Content Converter'],
+            project_titles: ['Decision Tree Editor', 'Social Media Monitor', 'Backoffice Chat Plugin', 'Alliander Computer Vision', 'Internship at Alliander', 'Internship at OpenValue - Long Form Content Converter'],
             projects: [
                 {
-                    // paragraphs: [
-                    //     'My first influential project was commissioned by the legal advisory firm ARAG. This project fell in the heart of the COVID-19 pandemic. The assignment was to make a plugin for the website of ARAG, where users can fill out a dynamic questionnaire for quick legal advice concerning travel rights during the pandemic.', 
-                    //     'During this project I was in charge of making the architectural design for the plugin. Using Firebase, Java and Angular, I made an editable tree-based datastructure that formed the basis for the questionnaire.', 
-                    //     'This was my first coöperative project and it taught me the basics of team-based development, stakeholder management and long-term planning.', 
-                    //     'The result of the project was then used on the website of ARAG during the COVID-period, and the same structure is still used to this day in their RightCheck Consumer Purchase.'
-                    // ]
                     paragraphs: [
                         'My first influential project was commissioned by the legal advisory firm ARAG during the COVID-19 pandemic. I was tasked with creating a website plugin that allowed users to complete a dynamic questionnaire for quick legal advice on travel rights.',
                         'I designed the architecture for the plugin, using Firebase, Java, and Angular to build an editable tree-based data structure that formed the backbone of the questionnaire.',
@@ -118,7 +117,7 @@ export const TRANSLATIONS = {
             ]
         },
         navigation: {
-            items: ['Home', 'About me', 'Services', 'Skills', 'Experience', 'In development', 'Contact']
+            items: ['Home', 'About me', 'Experience', 'Skills', 'Contact']
         },
         services: {
             title: 'Services',

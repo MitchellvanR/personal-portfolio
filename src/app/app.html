@@ -1,0 +1,14 @@
+<app-navigation
+    [activeSectionIndex]="currentSectionIndex"
+    [theme]="currentTheme"
+    [activeLanguage]="activeLanguage"
+    (sectionChange)="onSectionChange($event)"
+    (languageChange)="onLanguageChange($event)">
+</app-navigation>
+<main>
+    <app-splash [activeLanguage]="activeLanguage" (sectionChange)="onSectionChange($event)"></app-splash>
+    <app-about [activeLanguage]="activeLanguage"></app-about>
+    <app-services [activeLanguage]="activeLanguage"></app-services>
+    <app-skills [activeLanguage]="activeLanguage"></app-skills>
+    <app-experience [activeLanguage]="activeLanguage"></app-experience>
+</main>

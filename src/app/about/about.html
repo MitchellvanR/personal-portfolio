@@ -1,0 +1,12 @@
+<article class="about" id="targetAbout" data-theme="light">
+    <div class="image-container">
+        <img src="assets/images/aboutme.jpg" alt="Mitchell van Rijswijk, software developer">
+    </div>
+    <div class="text-container">
+        <h1>{{  text.title  }}</h1>
+        <div class="hr-accent"></div>
+        @for (paragraph of text.paragraphs; track i; let i = $index) {
+            <p>{{ paragraph }}</p>
+        }
+    </div>
+</article>

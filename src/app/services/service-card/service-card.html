@@ -1,0 +1,9 @@
+<li class="service-card">
+    <img [src]="'assets/images/icons/' + icon" class="icon" alt="placeholder">
+    <h2>{{ service }}</h2>
+    <ul>
+        @for (line of description; track i; let i = $index) {
+            <li>{{ line }}</li>
+        }
+    </ul>
+</li>

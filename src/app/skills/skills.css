@@ -1,0 +1,49 @@
+.skills {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    height: 100vh;
+}
+
+.skills h1, h2, p, li {
+    color: var(--text-color-dark);
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.page-split-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    height: 60vh;
+    justify-content: flex-start;
+}
+
+#left, #right {
+    width: 50%;
+}
+
+#left {
+    border-right: 1.5px solid var(--accent-color);
+}
+
+#right {
+    gap: 1.5vh;
+}
+
+#right h2, p {
+    align-self: flex-start;
+    margin-left: 2vw;
+    max-width: 90%;
+}
+
+.page-split-container li {
+    line-height: 4;
+}

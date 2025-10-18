@@ -1,0 +1,37 @@
+<nav class="navbar" [ngClass]="[theme, isSplash ? 'splash-language-dark' : '']">
+    <ul class="navigation">
+        @for (section of sections; track i; let i = $index) {
+            <li
+                class="clickable-list-item"
+                [class.active]="i === activeSectionIndex"
+                (click)="scrollToSection(i)">
+                {{ text.items[i] }}
+                @if (i === activeSectionIndex) {
+                    <div class="hr-accent"></div>
+                }
+            </li>
+        }
+    </ul>
+
+    <ul class="language">
+        <li 
+            class="clickable-list-item"
+            [class.active]="activeLanguage === 'NL'"
+            (click)="toggleLanguage('NL')">
+            NL
+            @if (activeLanguage === 'NL') {
+                <div class="hr-accent"></div>
+            }
+        </li>
+        <li>|</li>
+        <li 
+            class="clickable-list-item"
+            [class.active]="activeLanguage === 'EN'"
+            (click)="toggleLanguage('EN')">
+            EN
+            @if (activeLanguage === 'EN') {
+                <div class="hr-accent"></div>
+            }
+        </li>
+    </ul>
+</nav>

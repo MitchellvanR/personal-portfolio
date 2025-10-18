@@ -1,0 +1,13 @@
+<article class="services" data-theme="dark" id="targetServices">
+    <h1>{{ text.title }}</h1>
+    <button class="contact-me">{{ text.buttonText }}</button>
+    <ul class="service-cards">
+        @for (service of text.services; track i; let i = $index) {
+            <app-service-card
+                [service]="service"
+                [description]="text.descriptions[i]"
+                [icon]="serviceIcons[i]"
+            ></app-service-card>
+        }
+    </ul>
+</article>

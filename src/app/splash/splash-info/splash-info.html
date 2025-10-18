@@ -1,0 +1,11 @@
+<section class="splash-info-section">
+    <div class="info-container">
+        <h1>{{ text.title }}</h1>
+        <p><i>{{ text.subtitle }}</i></p>
+        <div class="hr-accent"></div>
+        @for (paragraph of text.paragraphs; track i; let i = $index) {
+            <p [innerHTML]="paragraph"></p>
+        }
+        <div class="scroll-down" (click)="scrollToAbout()"></div>
+    </div>
+</section>

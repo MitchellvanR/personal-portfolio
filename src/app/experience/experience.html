@@ -1,0 +1,24 @@
+<article class="experience" id="targetExperience" data-theme="dark">
+    <h1>{{ text.title }}</h1>
+    <div class="timeline">
+        @for (image of project_images; track i; let i = $index) {
+            <div class="node" [ngClass]="{ 'active-node': i === activeNode }" (click)="onNodeActivation(i)">
+                @if (i == activeNode) {   
+                    <div class="tooltip">
+                        <img [src]="'assets/images/projects/' + project_images[i]" alt="project-image">
+                    </div>                
+                }
+                <p>{{ text.timestamps[i] }}</p> 
+            </div>
+        }
+    </div>
+    <div class="text-container">
+        <h2>{{ text.project_titles[activeNode] }}</h2>
+        <div class="hr-accent"></div>
+        <div class="paragraphs">
+            @for (paragraph of text.projects[activeNode].paragraphs; track i; let i = $index) {
+                <p>{{ paragraph }}</p>
+            }
+        </div>
+    </div>
+</article>

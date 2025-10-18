@@ -21,7 +21,7 @@ export class Navigation {
     {text: 'About me', target: "targetAbout"}, 
     {text: 'Experience', target: "targetExperience"}, 
     {text: 'Skills', target: "targetSkills"}, 
-    {text: 'Contact', target: ""}]
+    {text: 'Contact', target: "targetContact"}]
 
   constructor(private scroller: ViewportScroller) {}
 

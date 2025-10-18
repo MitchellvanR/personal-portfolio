@@ -4,6 +4,7 @@ import { About } from "./about/about";
 import { Skills } from "./skills/skills";
 import { Navigation } from "./navigation/navigation";
 import { Experience } from "./experience/experience";
+import { Contact } from './contact/contact';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,8 @@ import { Experience } from "./experience/experience";
     About,
     Skills,
     Navigation,
-    Experience
+    Experience,
+    Contact
 ],
   templateUrl: './app.html',
   styleUrl: './app.css'

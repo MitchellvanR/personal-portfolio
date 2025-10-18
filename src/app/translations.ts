@@ -9,6 +9,10 @@ export const TRANSLATIONS = {
                 'Op dit moment ben ik bezig mijn zzp-activiteiten verder uit te bouwen met als doel een eigen bedrijf dat gespecialiseerd is in ethische softwareontwikkeling. Ik werk graag samen met klanten die dezelfde waarden delen, waarbij open communicatie en wederzijds begrip altijd centraal staan, zodat we samen oplossingen kunnen bouwen die écht waarde toevoegen.'
             ]            
         },
+        contact: {
+            title: 'Contact',
+            callToAction: 'Laten we contact leggen. Bekijk mijn werk of benader mij!'
+        },
         experience: {
             title: 'Ervaring',
             timestamps: ['November 2020', 'April 2021', 'Maart 2023', 'September 2024', 'Februari 2024', 'April 2025'],
@@ -85,6 +89,10 @@ export const TRANSLATIONS = {
                 'My passion lies in creating software that supports users rather than manipulates them. I believe technology should be back in the hands of the people, with respect for privacy, transparency, and minimal distractions. Every project I take on or develop reflects these values and aims to deliver a reliable and user-friendly experience.',
                 'Currently, I am expanding my freelance activities with the goal of building my own company focused on ethical software development. I enjoy collaborating with clients who share the same values, where open communication and mutual understanding are always central, so we can build solutions that truly add value together.'
             ]
+        },
+        contact: {
+            title: 'Contact',
+            callToAction: 'Let\'s get in touch. Check out my work or contact me!'
         },
         experience: {
             title: 'Experience',

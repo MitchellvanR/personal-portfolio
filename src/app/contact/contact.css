@@ -1,0 +1,35 @@
+.contact {
+    align-items: center;
+    background: var(--primary-gradient);
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    height: 100vh;
+}
+
+.contact h1 {
+    margin-top: 10vh;
+}
+
+.contact p {
+    margin-top: 10vh;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.nav-image {
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    height: 15vh;
+    width: 15vh;
+    transition: all .3s ease;
+}
+
+.nav-image:hover {
+    transform: translate3D(0,-1px,0) scale(1.08);
+    transition: all .15s ease;
+}

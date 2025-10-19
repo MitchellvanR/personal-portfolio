@@ -9,16 +9,20 @@ import { TRANSLATIONS } from '../translations';
 })
 export class Contact {
   @Input() activeLanguage: 'NL' | 'EN' = 'NL'
-  
-  project_images = ['arag.png', 'politie.png', 'jdi.jpg', 'NotS.png', 'alliander.png', 'openvalue.png']
-
-  activeNode = this.project_images.length - 1
 
   get text() {
     return TRANSLATIONS[this.activeLanguage].contact
   }
 
-  onNodeActivation(i: number) {
-    this.activeNode = i
+  get resumePath(): string {
+    const langSuffix = this.activeLanguage
+    return `assets/files/Mitchell-van-Rijswijk-CV-${langSuffix}.pdf`
+  }
+
+  downloadResume() {
+    const link = document.createElement('a');
+    link.href = this.resumePath;
+    link.download = `Mitchell-van-Rijswijk-CV-${this.activeLanguage}.pdf`;
+    link.click();
   }
 }

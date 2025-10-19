@@ -1,9 +1,14 @@
 <article class="contact" id="targetContact" data-theme="dark">
-    <h1>{{ text.title }}</h1>
-    <p>{{ text.callToAction }}</p>
-    <div class="links">
-        <a href="mailto:mitchell.van.rijswijk@gmail.com" target="_blank"><img class="nav-image" src="assets/images/logos/gmail.png" alt="Gmail logo"></a>
-        <a href="https://www.linkedin.com/in/mitchell-van-rijswijk/" target="_blank"><img class="nav-image" src="assets/images/logos/linkedin.png" alt="LinkedIn logo"></a>
-        <a href="https://github.com/MitchellvanR" target="_blank"><img class="nav-image" src="assets/images/logos/github.png" alt="GitHub logo"></a>
-    </div>
+    <section class="contact-card">
+        <h1>{{ text.title }}</h1>
+        <div class="hr-accent"></div>
+        <p>{{ text.callToAction }}</p>
+        <div class="hr-accent"></div>
+        <div class="links">
+            <a href="mailto:mitchell.van.rijswijk@gmail.com" target="_blank"><img class="nav-image" src="assets/images/logos/gmail.webp" alt="Gmail logo"></a>
+            <a href="https://www.linkedin.com/in/mitchell-van-rijswijk/" target="_blank"><img class="nav-image" src="assets/images/logos/linkedin.png" alt="LinkedIn logo"></a>
+            <a href="https://github.com/MitchellvanR" target="_blank"><img class="nav-image" src="assets/images/logos/github.svg" alt="GitHub logo"></a>
+        </div>
+        <button (click)="downloadResume()">{{ text.download }}</button>
+    </section>
 </article>

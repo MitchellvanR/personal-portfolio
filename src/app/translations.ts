@@ -11,7 +11,8 @@ export const TRANSLATIONS = {
         },
         contact: {
             title: 'Contact',
-            callToAction: 'Laten we contact leggen. Bekijk mijn werk of benader mij!'
+            callToAction: 'Laten we contact leggen. Bekijk mijn werk of benader mij!',
+            download: 'Download mijn cv'
         },
         experience: {
             title: 'Ervaring',
@@ -92,7 +93,8 @@ export const TRANSLATIONS = {
         },
         contact: {
             title: 'Contact',
-            callToAction: 'Let\'s get in touch. Check out my work or contact me!'
+            callToAction: 'Let\'s get in touch. Check out my work or contact me!',
+            download: 'Download my resume'
         },
         experience: {
             title: 'Experience',

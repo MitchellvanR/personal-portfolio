@@ -58,3 +58,17 @@
     gap: 20px;
     margin: 50px;
 }
+
+.mobile-navigation {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+
+    .mobile-navigation {
+        display: flex
+    }
+}

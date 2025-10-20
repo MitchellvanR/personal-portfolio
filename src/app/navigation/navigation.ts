@@ -1,10 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule, ViewportScroller } from '@angular/common';
 import { TRANSLATIONS } from '../translations';
+import { MobileNavigation } from './mobile-navigation/mobile-navigation';
 
 @Component({
   selector: 'app-navigation',
-  imports: [CommonModule],
+  imports: [CommonModule, MobileNavigation],
   templateUrl: './navigation.html',
   styleUrl: './navigation.css'
 })
@@ -21,7 +22,8 @@ export class Navigation {
     {text: 'About me', target: "targetAbout"}, 
     {text: 'Experience', target: "targetExperience"}, 
     {text: 'Skills', target: "targetSkills"}, 
-    {text: 'Contact', target: "targetContact"}]
+    {text: 'Contact', target: "targetContact"}
+  ]
 
   constructor(private scroller: ViewportScroller) {}
 

@@ -21,14 +21,19 @@ export const TRANSLATIONS = {
             projects: [
                 {
                     paragraphs: [
-                        'Mijn eerste invloedrijke project werd in opdracht uitgevoerd door het juridisch adviesbureau ARAG tijdens de COVID-19-pandemie. Ik kreeg de taak om een websiteplug-in te ontwikkelen waarmee gebruikers via een dynamische vragenlijst snel juridisch advies konden krijgen over reisrechten.', 
-                        'Ik ontwierp de architectuur van de plug-in en gebruikte Firebase, Java en Angular om een bewerkbare boomstructuur te bouwen die de ruggengraat van de vragenlijst vormde.',
-                        'Dit was mijn eerste samenwerkingsproject, waarin ik de basisprincipes van teamwork, stakeholdermanagement en langetermijnplanning leerde. Deze ervaringen vormen de fundamenten van de ontwikkelaar die ik vandaag ben.',
-                        'De plug-in werd met succes geïmplementeerd op de website van ARAG en bleef gedurende de pandemie in gebruik. De onderliggende structuur ondersteunt vandaag de dag nog steeds ARAG\'s RechtCheck Consumentenaankoop.'
+                        'Mijn eerste invloedrijke project voerde ik uit in opdracht van het juridisch adviesbureau ARAG tijdens de COVID-19 pandemie. Tijdens dit project heb ik in groepsverband software ontwikkeld waarmee medewerkers efficiënt kant-en-klare beslisbomen kon maken en bewerken, bestemd voor gebruik als questionnaires op hun website.', 
+                        'De applicatie werd ingezet om questionnaires te maken waarin klanten zelf snel juridisch advies kunnen krijgen met betrekking tot hun geboekte reizen en hun rechten bij annulering omdat de reis bijvoorbeeld naar een land met code oranje zou gaan.',
+                        'Dit was mijn eerste samenwerkingsproject, waarin ik de basisprincipes van teamwork, stakeholdermanagement en langetermijnplanning leerde. Ik was degene die het woord nam in de stakeholder gesprekken en hier heb ik geleerd hoe ik effectief requirements uit te vragen en te analyseren. Deze ervaringen vormen de basis van de ontwikkelaar die ik vandaag ben.',
+                        'De applicatie en haar questionnaires werden in gebruik genomen op de website van ARAG en bleven gedurende de pandemie in gebruik. De onderliggende structuur ondersteunt vandaag de dag nog steeds ARAG\'s RechtCheck Consumentenaankoop.'
                     ]
                 },
                 {
-                    paragraphs: ['Hey', 'yo']
+                    paragraphs: [
+                        'Mijn persoonlijke favoriete samenwerking was met Politie Leiden. Dit project lag in het hart van de COVID-19 pandemie, wanneer er steeds meer rellen plaatsvonden tegen de getroffen maatregelen om het volk te beschermen tegen het virus. De oorsprong van deze rellen bleek vaak terug te leiden te zijn naar social media.',
+                        'Hierom heb ik in groepsverband een social media scraper gebouwd. Deze applicatie wordt gebruikt om trefwoorden in te voeren waarmee op openbare kanalen van Snapchat, Facebook, Telegram en Instagram opruiende berichten gevonden kunnen worden. De politie kan dan bepalen of er op deze berichten actie ondernomen dient te worden.',
+                        'Tijdens dit project bouwde ik de module die openbare telegram kanalen monitorde. Dit project leerde mij gebruik maken van externe api\'s en het belang van modulair software ontwerp om de integratie van verschillende social media platformen goed te laten verlopen.',
+                        'Ook leerde ik veel over de ethiek van software, en ik moest in nauw contact met de opdrachtgever om de legaliteit van de software te waarborgen. Tijdens de pandemie heeft de applicatie aangestaan op een monitor in het bureau, waardoor agenten snel konden reageren op opkomende rellen.'
+                    ]
                 },
                 {
                     paragraphs: ['Hey', 'yo']
@@ -40,7 +45,12 @@ export const TRANSLATIONS = {
                     paragraphs: ['Hey', 'yo']
                 },
                 {
-                    paragraphs: ['Hey', 'yo']
+                    paragraphs: [
+                        'Het landschap van social media is er een die snel verandert. Om met de tijd mee te gaan en zichtbaarheid te vergroten, was het zaak voor OpenValue om over te stappen naar short form videomateriaal. In dit stageproject ontwikkelde ik een applicatie die contextanalyse van long form video opnames en highlightgeneratie automatiseerde.', 
+                        'Dit was een zelfstandig project waarin ik technieken leerde om context af te leiden uit audiotranscripten en op basis hiervan een gerangschikte lijst kandidaatfragmenten op te stellen. Uit deze lijst werden de 10 beste fragmenten gebruikt om clips mee te genereren.',
+                        'Omdat dit project met de AI techniek Automatic Speech Recognition werkte, was het resultaat foutgevoelig. Daarom heb ik er ook een basaal videobewerkingselement in gebouwd, om deze fouten te bestrijden. Hierin kon onder andere de lengte van de video\'s aangepast worden, evenals de invulling en plaatsing van correcte ondertiteling.',
+                        'Tegen het einde van mijn stage werd de applicatie als productie-klaar beschouwd en deze wordt nu in gebruik genomen door de uitbreidende marketingafdeling van OpenValue.'
+                    ]
                 },
             ]
         },
@@ -103,10 +113,10 @@ export const TRANSLATIONS = {
             projects: [
                 {
                     paragraphs: [
-                        'My first influential project was commissioned by the legal advisory firm ARAG during the COVID-19 pandemic. I was tasked with creating a website plugin that allowed users to complete a dynamic questionnaire for quick legal advice on travel rights.',
-                        'I designed the architecture for the plugin, using Firebase, Java, and Angular to build an editable tree-based data structure that formed the backbone of the questionnaire.',
-                        'This was my first collaborative project, where I learned the fundamentals of team-based development, stakeholder management, and long-term planning. These experiences form the basics of the developer I am today.',
-                        'The plugin was successfully deployed on ARAG\'s website and remained in use throughout the pandemic. Its underlying structure continues to support ARAG\'s RightCheck Consumer Purchase tool today.'
+                        'dflkj.',
+                        'sdaf',
+                        'dfs',
+                        'sdfs'
                     ]
                 },
                 {

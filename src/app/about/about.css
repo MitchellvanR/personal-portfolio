@@ -30,3 +30,24 @@
 .text-container h1, p {
     color: var(--text-color-dark);
 }
+
+@media screen and (max-width: 800px) {
+    .about {
+        flex-direction: column;
+        gap: 1em;
+        height: auto;
+        padding: 10vh 0;
+    }
+
+    .image-container {
+        width: 75%;
+    }
+
+    .image-container img {
+        width: 100%;
+    }
+
+    .text-container {
+        width: 75%;
+    }
+}

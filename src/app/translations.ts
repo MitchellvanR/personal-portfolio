@@ -87,7 +87,7 @@ export const TRANSLATIONS = {
             subtitle: 'Software ontwikkelaar',
             paragraphs: [
                 'Met een passie voor <b>ethische</b> en <b>minimalistische</b> software, help ik u of uw bedrijf graag aan een moderne website, app of nieuwe tooling.',
-                'Ik nodig u graag uit in mijn portfolio, waar u meer informatie vindt over de diensten die ik bied, mijn vaardigheden en werkervaringen. Bent u geïnteresseerd in een afspraak? Neem graag contact op via het contactformulier.'
+                // 'Ik nodig u graag uit in mijn portfolio, waar u meer informatie vindt over de diensten die ik bied, mijn vaardigheden en werkervaringen. Bent u geïnteresseerd in een afspraak? Neem graag contact op via het contactformulier.'
             ]
         }
     },

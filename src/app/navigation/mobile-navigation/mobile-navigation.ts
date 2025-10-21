@@ -9,12 +9,31 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class MobileNavigation {
   @Input() navigationItems!: Array<{text: string, target: string}>
-  
+  @Input() text!: any
+  @Input() activeSectionIndex!: number
+  @Input() activeLanguage: 'NL' | 'EN' = 'NL'
+
   @Output() sectionChange = new EventEmitter<number>()
-  
+  @Output() languageChange = new EventEmitter<'NL' | 'EN'>()
+
+  menuOpen = false
+
   constructor(private scroller: ViewportScroller) {}
 
-  scrollToSection(index: number) {
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen
+  }
+
+  handleSectionClick(index: number) {
+    this.scrollToSection(index)
+    this.menuOpen = false
+  }
+
+  toggleLanguage(lang: 'NL' | 'EN') {
+    this.languageChange.emit(lang)
+  }
+
+  private scrollToSection(index: number) {
     this.scroller.scrollToAnchor(this.navigationItems[index].target)
     this.sectionChange.emit(index)
   }

@@ -23,5 +23,14 @@
 @media screen and (max-width: 800px) {
     .skill-card {
         width: 85vw;
+        gap: 3vw;
+    }
+
+    .skill-card img {
+        width: 10vw;
+    }
+
+    .skill-card p {
+        font-size: 1.1em;
     }
 }

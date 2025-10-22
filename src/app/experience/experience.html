@@ -6,9 +6,18 @@
                 @if (i == activeNode) {   
                     <div class="tooltip">
                         <img [src]="'assets/images/projects/' + project_images[i]" alt="project-image">
-                    </div>                
+                    </div>   
+                    <div class="text-container-mobile">
+                        <h2>{{ text.project_titles[activeNode] }}</h2>
+                        <div class="hr-accent"></div>
+                        <div class="paragraphs">
+                            @for (paragraph of text.projects[activeNode].paragraphs; track i; let i = $index) {
+                                <p>{{ paragraph }}</p>
+                            }
+                        </div>
+                    </div>             
                 }
-                <p>{{ text.timestamps[i] }}</p> 
+                <p class="timestamp">{{ text.timestamps[i] }}</p> 
             </div>
         }
     </div>

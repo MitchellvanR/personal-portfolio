@@ -41,7 +41,7 @@
     cursor: pointer;
 }
 
-.node p {
+.timestamp {
     position: absolute;
     text-align: center;
     transform: translateY(6vh);
@@ -57,6 +57,10 @@
     flex-direction: column;
     gap: 2vh;
     width: 80%;
+}
+
+.text-container-mobile {
+    display: none;
 }
 
 .text-container .hr-accent {
@@ -88,7 +92,6 @@
     max-width: 90%;
 }
 
-/* --- MOBILE (≤800px): Vertical Timeline --- */
 @media screen and (max-width: 800px) {
   .experience {
     flex-direction: column;
@@ -105,7 +108,6 @@
     width: 100%;
   }
 
-  /* Timeline becomes vertical */
   .timeline {
     flex-direction: column-reverse;
     align-items: center;
@@ -118,7 +120,6 @@
     position: relative;
   }
 
-  /* The connecting line (timeline) runs vertically */
   .timeline::before {
     content: "";
     position: absolute;
@@ -131,7 +132,6 @@
     border-radius: 2px;
   }
 
-  /* Each node sits along the line */
   .node {
     align-items: flex-start;
     position: relative;
@@ -167,9 +167,8 @@
     background-color: var(--accent-color);
   }
 
-  /* Timestamp text next to the dot */
-  .node p {
-    order: 1;                     /* ✅ Date comes first */
+  .timestamp {
+    order: 1;
     position: relative;
     transform: none;
     margin-left: 4vh;
@@ -181,9 +180,8 @@
     min-width: max-content;
   }
 
-  /* Tooltip (image preview) below or beside the node */
   .tooltip {
-    order: 3;                     /* ✅ Image comes last */
+    order: 2;
     position: relative;
     transform: none;
     margin-left: 4vh;
@@ -197,15 +195,36 @@
     border-radius: 12px;
   }
 
-  /* Text content below the timeline */
   .text-container {
-    width: 100%;
-    margin-top: 6vh;
+    display: none;
   }
 
-  .paragraphs {
+  .text-container-mobile {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 1.5vh;  
+    width: 75vw; 
+    margin-left: 4vh;
+    margin-top: 1vh; 
+    color: white;
+    order: 3;
+  }
+
+  .text-container-mobile .hr-accent {
+    width: 100%;
+  }
+
+  .text-container-mobile .paragraphs {
+    display: flex;
+    flex-direction: column;
+    width: 75vw;
+    height: auto;
+  }
+
+  .text-container-mobile .paragraphs p {
+    width: 100%;
+    margin: 0;
+    white-space: normal;
   }
 }

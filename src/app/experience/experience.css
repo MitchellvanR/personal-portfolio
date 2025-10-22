@@ -87,3 +87,125 @@
     max-height: 80%;
     max-width: 90%;
 }
+
+/* --- MOBILE (≤800px): Vertical Timeline --- */
+@media screen and (max-width: 800px) {
+  .experience {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3vh;
+    height: auto;
+    justify-content: flex-start;
+    padding: 5vh 5vw;
+  }
+
+  .experience h1 {
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Timeline becomes vertical */
+  .timeline {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    width: 4px;
+    height: auto;
+    min-height: 80vh;
+    background-color: white;
+    margin-left: 3vw;
+    position: relative;
+  }
+
+  /* The connecting line (timeline) runs vertically */
+  .timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  /* Each node sits along the line */
+  .node {
+    align-items: flex-start;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1vh;
+    width: 100%;
+    height: auto;
+    background: none;
+    border: none;
+    margin: 4vh 0;
+  }
+
+  .node:hover {
+    background: none;
+  }
+
+  .node::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 3vh;
+    height: 3vh;
+    z-index: 2;
+  }
+
+  .node.active-node::before {
+    background-color: var(--accent-color);
+  }
+
+  /* Timestamp text next to the dot */
+  .node p {
+    order: 1;                     /* ✅ Date comes first */
+    position: relative;
+    transform: none;
+    margin-left: 4vh;
+    text-align: left;
+    color: white;
+    font-size: 1rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: max-content;
+  }
+
+  /* Tooltip (image preview) below or beside the node */
+  .tooltip {
+    order: 3;                     /* ✅ Image comes last */
+    position: relative;
+    transform: none;
+    margin-left: 4vh;
+    margin-top: 1vh;
+    width: 75vw;
+    height: 20vh;
+  }
+
+  .tooltip img {
+    height: auto;
+    border-radius: 12px;
+  }
+
+  /* Text content below the timeline */
+  .text-container {
+    width: 100%;
+    margin-top: 6vh;
+  }
+
+  .paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+  }
+}

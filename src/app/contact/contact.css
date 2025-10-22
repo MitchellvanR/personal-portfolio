@@ -63,3 +63,20 @@
     border: 5px solid var(--accent-color);
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 800px) {
+    .contact-card {
+        width: 80vw;
+        padding: 10vw 5vw;
+        gap: 7vh;
+    }
+
+    .contact-card p {
+        text-align: center;
+    }
+
+    .nav-image {
+        height: 10vh;
+        width: 10vh;
+    }
+}

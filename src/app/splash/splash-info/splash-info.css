@@ -38,8 +38,10 @@
 
 @media screen and (max-width: 800px) {
     .info-container {
+        align-items: center;
         padding-top: 10vh;
         height: 90vh;
+        width: 80vw;
     }
 
     .info-container p {

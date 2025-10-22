@@ -12,6 +12,7 @@
 }
 
 .skills-section {
+    align-items: center;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -46,4 +47,41 @@
 
 .page-split-container li {
     line-height: 4;
+}
+
+#mobile-separator {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .skills {
+        min-height: 100vh;
+        height: auto;
+        padding-top: 10vh;
+    }
+    
+    #left, #right {
+        border: none;
+        width: auto;
+    }
+
+    #right {
+        width: 85%;
+    }
+
+    .skills-section {
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    #mobile-separator {
+        display: block;
+        width: 85%;
+        align-self: center;
+    }
+
+    .page-split-container {
+        justify-content: center;
+        height: auto;
+    }
 }

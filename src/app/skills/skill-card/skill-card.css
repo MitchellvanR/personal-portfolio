@@ -19,3 +19,9 @@
     font-size: 1.4em;
     margin-left: 2vw;
 }
+
+@media screen and (max-width: 800px) {
+    .skill-card {
+        width: 85vw;
+    }
+}
